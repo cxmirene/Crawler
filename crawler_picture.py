@@ -120,7 +120,7 @@ class Crawler():
 
     def write(self):
         summaryDataFrame = pandas.DataFrame(self.pic_result_list)
-        summaryDataFrame.to_excel("summary.xlsx", encoding='utf-8', index=False, header=False)
+        summaryDataFrame.to_excel("summary_pictures_biying.xlsx", encoding='utf-8', index=False, header=False)
 
 
 parser = argparse.ArgumentParser()
