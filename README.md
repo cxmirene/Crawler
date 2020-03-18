@@ -8,8 +8,9 @@ Get wallpaper pictures from [BiYing Leaderboard ](https://bing.ioliu.cn/ranking)
 
 ---
 
-- Python
+- Python3
 - pandas
+- pyecharts>=1.0.0 ( If you want to do simple data analysis)
 
 ### Getting Started
 
@@ -31,14 +32,16 @@ optional arguments:
                         是否下载图片
   -w WRITE, --write WRITE
                         是否写入excel
+  -a ANALYSIS, --analysis ANALYSIS
+                        是否进行数据分析
 ```
 
-the default of **DOWNLOAD** is **False**
+the default of **DOWNLOAD** is **False**，**ANALYSIS** is **False**，**WRITE** is **True**
 
 - **run：**
 
 ```
-python crawler_picture.py -s 1 -e 2 -d True -w True
+python crawler_picture.py -s 1 -e 2 -d True -w True -a False
 ```
 
 - **result：**
@@ -49,5 +52,10 @@ the result has been shown in the file(summary_pictures_biying.xlsx) and the flod
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | <img src="README.assets/1584450357058.png" alt="1584450357058" style="zoom:50%;" /> | <img src="README.assets/1584450393854.png" alt="1584450393854" style="zoom: 67%;" /> |
 
-and you can see the **download progress** on the terminal
+and you can see the **download progress** on the terminal：
 
+<img src="README.assets/1584503946989.png" alt="1584503946989" style="zoom:67%;" />
+
+and here is a simple data analysis to show the  percentage of shooting locations：
+
+<img src="README.assets/1584542076178.png" alt="1584542076178" style="zoom:50%;" />
